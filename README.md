@@ -55,6 +55,10 @@ NEXTAUTH_SECRET=your_nextauth_secrete
 NEXTAUTH_URL=https://losode.vercel.app
 NEXTAUTH_DEBUG=true
 
+# Payment
+NEXT_PUBLIC_PAYSTACK_PUBLIC_KEY_TEST=pk_test_f83a6f3b151dbfad60871111a1c933d4b9e3c696
+NEXT_PUBLIC_PAYSTACK_SECRET_KEY_TEST=sk_test_1437b6b9bf51ab444e755bf435722399f4b037b3
+
 ```
 
 ### 4. Start Development Server
