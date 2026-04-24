@@ -47,7 +47,7 @@ Create a `.env` file in the project root:
 ```env
 # Site Information (Optional)
 NODE_ENV="development"
-NEXT_PUBLIC_BASEURL="backendurl goes here"
+NEXT_PUBLIC_BASEURL="https://fakeapi.platzi.com/en"
 NEXT_PUBLIC_APP_URL=https://losode.vercel.app
 
 # Next-Auth Config
