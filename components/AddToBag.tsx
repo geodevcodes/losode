@@ -1,37 +1,44 @@
 "use client";
-// import { useShoppingCart } from "use-shopping-cart";
+import { useAppDispatch } from "@/redux/hooks";
+import { addToCart } from "@/redux/features/cartSlice";
+import { toast } from "sonner";
 
 export interface ProductCart {
+  id: number;
   name: string;
   description: string;
   price: number;
   currency: string;
-  image: any;
-  price_id: string;
+  image: string;
+  slug: string;
 }
 
 export default function AddToBag({
+  id,
   name,
   description,
   price,
-  currency,
-  price_id,
   image,
+  slug,
 }: ProductCart) {
-  // const { addItem, handleCartClick } = useShoppingCart();
-  const product = {
-    name: name,
-    description: description,
-    price: price,
-    currency: currency,
-    price_id: price_id,
-    // image: urlFor(image).url(),
-  };
+  const dispatch = useAppDispatch();
+
   return (
     <button
-      // onClick={() => {
-      //   addItem(product), handleCartClick();
-      // }}
+      onClick={() => {
+        dispatch(
+          addToCart({
+            id,
+            name,
+            description,
+            price,
+            image,
+            slug,
+          }),
+        );
+
+        toast.success("Product added to cart");
+      }}
     >
       Add To Cart
     </button>

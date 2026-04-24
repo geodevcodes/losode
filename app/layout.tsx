@@ -5,6 +5,7 @@ import TanstackProvider from "@/providers/TanstackProvider";
 import { Toaster } from "sonner";
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/Footer";
+import ReduxProvider from "@/providers/ReduxProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,9 +34,11 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         <TanstackProvider>
-          <Navbar />
-          {children}
-          <Footer />
+          <ReduxProvider>
+            <Navbar />
+            {children}
+            <Footer />
+          </ReduxProvider>
         </TanstackProvider>
         <Toaster position="top-center" richColors={true} />
       </body>

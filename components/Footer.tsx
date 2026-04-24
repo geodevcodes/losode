@@ -12,20 +12,13 @@ export default function Footer() {
   const dateString = getYear.getFullYear();
   return (
     <>
-      <footer className="pt-8 border-t xl:pl-10">
+      <footer className="pt-8 border-t border-input xl:pl-10">
         <section className="px-4 sm:px-6 text-left text-sm l md:flex max-w-2xl mx-auto lg:max-w-7xl lg:px-8  md:text-[14px]">
           <div className="md:w-2/3">
             <Link href="/">
               <h1 className="text-2xl md:text-4xl font-bold">
-                {" "}
-                Next <span className="text-primary">Commerce</span>
+                Losode <span className="text-primary">Commerce</span>
               </h1>
-              {/* <Image
-            src="/brandLogo.svg"
-            alt="brand logo"
-            width={100}
-            height={100}
-          /> */}
             </Link>
             <div>
               <p className="w-[240px] leading-6  mt-6 lg:w-[400px] text-sm">
@@ -66,7 +59,7 @@ export default function Footer() {
             <h4 className="font-bold text-primary text-sm">Contact Us</h4>
             <div className="flex items-center my-2 gap-2">
               <MdWifiCalling3 className="w-5 h-5 cursor-pointer" />
-              <p>+234 679 81819</p>
+              <p>+234 8133642798</p>
             </div>
             <div className="flex justify-start my-2 gap-2">
               <IoLocationSharp className="w-5 h-5 cursor-pointer" />
