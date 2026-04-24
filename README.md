@@ -1,36 +1,94 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
+<h1>Losode Application</h1>
+<h6><i>Manage your Client with Losode Application</i></h6>
+<hr />
+</div>
 
-## Getting Started
+Losode is a modern ecommerce platform for fashion and lifestyle products, including clothing, shoes, and accessories. Built for scalability and great user experience, it allows customers to seamlessly browse, discover, and purchase quality items from a curated marketplace.
 
-First, run the development server:
+With intuitive navigation, secure payments, and a responsive interface, Losode helps businesses showcase their products while delivering a fast and seamless shopping experience.
+
+# 🏗️ Tech Stack
+
+- **Framework**: [Next.js 16](https://nextjs.org/) with App Router
+- **Styling**: [Tailwind CSS 4](https://tailwindcss.com/)
+- **Authentication**: [NestJs](https://nestjs.com/) [NextAuth](https://next-auth.js.org/)
+- **React TanStack Query**: [React Tanstack Query](https://tanstack.com/query/latest)
+- **React TanStack Table**: [React Tanstack Query](https://tanstack.com/table/v8)
+- **AI Models**: [Vercel AI SDK](https://ai-sdk.dev/) (openai models, gemini models)
+- **Framer Motion**: [Framer Motion](https://motion.dev/docs)
+- **React-Hook Form**: [Redux Hook Form](https://react-hook-form.com)
+- **React-Redux**: [Redux Toolkit](https://redux-toolkit.js.org/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+
+# 🎯 Prototype
+
+![Minion](public/assets/prototype.png)
+
+# 🚀 How to Contribute
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/geodevcodes/losode.git
+cd losode
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Environment Setup
+
+Create a `.env` file in the project root:
+
+```env
+# Site Information (Optional)
+NODE_ENV="development"
+NEXT_PUBLIC_BASEURL="backendurl goes here"
+NEXT_PUBLIC_APP_URL=https://losode.vercel.app
+
+# Next-Auth Config
+NEXTAUTH_SECRET=your_nextauth_secrete
+NEXTAUTH_URL=https://losode.vercel.app
+NEXTAUTH_DEBUG=true
+
+```
+
+### 4. Start Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit [http://localhost:3000](http://localhost:3000) to see your application running!
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# Deployment
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Vercel was used to deploy the app.
 
-## Learn More
+- [VERCEL](https://vercel.com/)
 
-To learn more about Next.js, take a look at the following resources:
+# License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The MIT License - Copyright (c) 2026 - Present, geodevcodes / Storage Service.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🆘 Support
 
-## Deploy on Vercel
+- **Vercel AI-SDK**: [Vercel AI-SDK Documentation](https://ai-sdk.dev/docs/introduction/)
+- **NextAuth**: [NextAuth Documentation](https://next-auth.js.org/)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🙏 Acknowledgments
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Next.js](https://nextjs.org) for Frontend
+- [Vercel AI-SDK](https://ai-sdk.dev/) for AI model access
+- [Platzi API](https://fakeapi.platzi.com/en) for backend services
+- [Tailwind CSS](https://tailwindcss.com)
+- [Lucide](https://lucide.dev) for icons
+- [NextAuth](https://next-auth.js.org/)
+
+## Built by
+
+- [Rasheed Olatunde](https://github.com/olatunde1998) (Software Developer)
