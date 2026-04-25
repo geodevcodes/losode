@@ -33,6 +33,10 @@ const nextConfig: NextConfig = {
         hostname: "test.com",
       },
       {
+        protocol: "https",
+        hostname: "sanbercode.com",
+      },
+      {
         protocol: "http",
         hostname: "127.0.0.1",
         port: "8080",
