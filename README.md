@@ -11,11 +11,9 @@ With intuitive navigation, secure payments, and a responsive interface, Losode h
 # 🏗️ Tech Stack
 
 - **Framework**: [Next.js 16](https://nextjs.org/) with App Router
-- **Styling**: [Tailwind CSS 4](https://tailwindcss.com/)
-- **Authentication**: [NestJs](https://nestjs.com/) [NextAuth](https://next-auth.js.org/)
+- **Tailwindcss (Styling)**: [Tailwind CSS 4](https://tailwindcss.com/)
 - **React TanStack Query**: [React Tanstack Query](https://tanstack.com/query/latest)
-- **React TanStack Table**: [React Tanstack Query](https://tanstack.com/table/v8)
-- **AI Models**: [Vercel AI SDK](https://ai-sdk.dev/) (openai models, gemini models)
+- **AI Models**: [Openai](https://ai-sdk.dev/) (openai models)
 - **Framer Motion**: [Framer Motion](https://motion.dev/docs)
 - **React-Hook Form**: [Redux Hook Form](https://react-hook-form.com)
 - **React-Redux**: [Redux Toolkit](https://redux-toolkit.js.org/)
@@ -51,9 +49,7 @@ NEXT_PUBLIC_BASEURL="https://fakeapi.platzi.com/en"
 NEXT_PUBLIC_APP_URL=https://losode.vercel.app
 
 # Next-Auth Config
-NEXTAUTH_SECRET=your_nextauth_secrete
 NEXTAUTH_URL=https://losode.vercel.app
-NEXTAUTH_DEBUG=true
 
 # Payment
 NEXT_PUBLIC_PAYSTACK_PUBLIC_KEY_TEST=pk_test_f83a6f3b151dbfad60871111a1c933d4b9e3c696
@@ -81,18 +77,16 @@ The MIT License - Copyright (c) 2026 - Present, geodevcodes / Storage Service.
 
 ## 🆘 Support
 
-- **Vercel AI-SDK**: [Vercel AI-SDK Documentation](https://ai-sdk.dev/docs/introduction/)
-- **NextAuth**: [NextAuth Documentation](https://next-auth.js.org/)
+- **Vercel**: [Vercel Documentation](https://vercel.com/)
+- **Platzi API**: [NextAuth Documentation](https://fakeapi.platzi.com/en)
 
 ## 🙏 Acknowledgments
 
 - [Next.js](https://nextjs.org) for Frontend
-- [Vercel AI-SDK](https://ai-sdk.dev/) for AI model access
 - [Platzi API](https://fakeapi.platzi.com/en) for backend services
 - [Tailwind CSS](https://tailwindcss.com)
 - [Lucide](https://lucide.dev) for icons
-- [NextAuth](https://next-auth.js.org/)
 
 ## Built by
 
-- [Rasheed Olatunde](https://github.com/olatunde1998) (Software Developer)
+- [Rasheed Olatunde](https://github.com/geodevcodes) (Software Developer)

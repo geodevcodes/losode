@@ -4,7 +4,7 @@ import "./globals.css";
 import TanstackProvider from "@/providers/TanstackProvider";
 import { Toaster } from "sonner";
 import Navbar from "@/components/navbar/Navbar";
-import Footer from "@/components/Footer";
+import Footer from "@/components/footer/Footer";
 import ReduxProvider from "@/providers/ReduxProvider";
 
 const geistSans = Geist({
