@@ -1,6 +1,7 @@
 "use client";
+
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
 import { ShoppingBag } from "lucide-react";
 import { Sheet } from "../modals/Sheet";
 import ShoppingCart from "../ShoppingCart";
@@ -10,25 +11,31 @@ import { selectCartCount } from "@/redux/features/cartSelectors";
 
 const links = [
   {
-    name: "Home",
-    href: "/",
+    name: "Shoes",
+    href: "/marketplace?category=image23fe",
   },
   {
-    name: "Men",
-    href: "/Men",
+    name: "Furniture",
+    href: "/marketplace?category=adad",
   },
   {
-    name: "Women",
-    href: "/Women",
+    name: "Miscellaneous",
+    href: "/marketplace?category=miscellaneous",
   },
-  { name: "Teens", href: "/Teens" },
+  {
+    name: "Accessories",
+    href: "/marketplace?category=interesrt",
+  },
 ];
+
 export default function Navbar() {
   const pathname = usePathname();
-  const [showCart, setShowCart] = useState(false);
+  const searchParams = useSearchParams();
+  const activeCategory = searchParams.get("category");
 
+  const [showCart, setShowCart] = useState(false);
   const cartCount = useAppSelector(selectCartCount);
-  // const { handleCartClick } = useShoppingCart();
+
   return (
     <>
       <header className="mb-8 border-b border-input">
@@ -38,23 +45,28 @@ export default function Navbar() {
               Losode <span className="text-primary">Commerce</span>
             </h1>
           </Link>
+
           <nav className="hidden gap-12 lg:flex 2xl:ml-16">
-            {links?.map((link, idx) => (
-              <div key={idx}>
-                {pathname === link?.href ? (
-                  <Link href="" className="text-lg font-semibold text-primary">
-                    {link?.name}
-                  </Link>
-                ) : (
+            {links?.map((link, idx) => {
+              const linkCategory = link.href.split("category=")[1];
+              const isActive =
+                pathname === "/marketplace" && activeCategory === linkCategory;
+
+              return (
+                <div key={idx}>
                   <Link
-                    href={link?.href}
-                    className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-primary"
+                    href={link.href}
+                    className={
+                      isActive
+                        ? "text-lg font-semibold text-primary"
+                        : "text-lg font-semibold text-gray-600 transition duration-100 hover:text-primary"
+                    }
                   >
-                    {link?.name}
+                    {link.name}
                   </Link>
-                )}
-              </div>
-            ))}
+                </div>
+              );
+            })}
           </nav>
 
           <div className="flex divide-x border-r sm:border-l border-input">

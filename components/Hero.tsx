@@ -3,13 +3,22 @@ import Link from "next/link";
 import axios from "axios";
 
 export default async function Hero() {
-  const res = await axios.get(
-    `${process.env.NEXT_PUBLIC_BASEURL}/products?limit=2`,
-  );
+ const res = await axios.get(
+   `${process.env.NEXT_PUBLIC_BASEURL}/products?limit=50`,
+ );
 
-  const products = res.data;
-  const firstImage = products?.[0]?.images?.[0];
-  const secondImage = products?.[1]?.images?.[0];
+ const products = res.data;
+
+ // filter all products with category "adad"
+ const adadProducts = products.filter((p: any) => p.category?.slug === "adad");
+
+ // pick two different images
+ const firstImage = adadProducts?.[0]?.images?.[0] || "/placeholder.png";
+
+ const secondImage =
+   adadProducts?.[4]?.images?.[1] ||
+   adadProducts?.[4]?.images?.[0] ||
+   "/placeholder.png";
 
   return (
     <section className="mx-auto max-w-2xl px-4 sm:pb-6 lg:max-w-7xl lg:px-8">
@@ -49,24 +58,24 @@ export default async function Hero() {
         </div>
       </div>
       <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
-        <div className="flex h-12 w-64 divide-x overflow-hidden rounded-lg border border-input">
+        <div className="flex h-12 w-74 divide-x overflow-hidden rounded-lg border border-input">
           <Link
-            href="/Men"
+            href="/marketplace?category=shoes"
             className="flex w-1/3 items-center justify-center text-gray-500 transition duration-100 hover:bg-gray-100 active:bg-gray-200 border-input"
           >
-            Men
+            Shoes
           </Link>
           <Link
-            href="/Women"
+            href="/marketplace?category=adad"
             className="flex w-1/3 items-center justify-center text-gray-500 transition duration-100 hover:bg-gray-100 active:bg-gray-200 border-input"
           >
-            Women
+            Furniture
           </Link>
           <Link
-            href="/Teens"
+            href="/marketplace?category=interesrt"
             className="flex w-1/3 items-center justify-center text-gray-500 transition duration-100 hover:bg-gray-100 active:bg-gray-200"
           >
-            Teens
+            Accessories
           </Link>
         </div>
       </div>

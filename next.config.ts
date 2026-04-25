@@ -6,15 +6,32 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "res.cloudinary.com",
-      },
-      {
-        protocol: "https",
-        hostname: "images.unsplash.com",
-      },
-      {
-        protocol: "https",
         hostname: "i.imgur.com",
+      },
+      {
+        protocol: "https",
+        hostname: "pravatar.cc",
+      },
+      {
+        protocol: "https",
+        hostname: "pravatar.cc",
+      },
+      {
+        protocol: "https",
+        hostname: "placehold.co",
+      },
+      {
+        protocol: "https",
+        hostname: "i.imgflip.com",
+      },
+      {
+        protocol: "https",
+        hostname: "test.com",
+      },
+      {
+        protocol: "http",
+        hostname: "127.0.0.1",
+        port: "8080",
       },
     ],
   },

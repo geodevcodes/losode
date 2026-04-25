@@ -6,8 +6,8 @@ import Image from "next/image";
 import { useGetProductsRequest } from "@/services/products.request";
 
 export default function Newest() {
-  const limit = 6;
-  const offset = 0;
+  const limit = 4;
+  const offset = 1;
 
   const {
     data: productsData,
@@ -31,7 +31,10 @@ export default function Newest() {
             Our Newest products
           </h2>
 
-          <Link href="/all" className="text-primary flex items-center gap-x-1">
+          <Link
+            href="/marketplace"
+            className="text-primary flex items-center gap-x-1"
+          >
             See All
             <span>
               <ArrowRight />
