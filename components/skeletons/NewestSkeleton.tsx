@@ -1,7 +1,7 @@
 export default function NewestSkeleton() {
   return (
     <div className="bg-white">
-      <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+      <div className="mx-auto max-w-2xl px-4 pb-16 pt-8 sm:px-6 sm:pb-24 lg:max-w-7xl lg:px-8">
         <div className="flex justify-between items-center">
           <div className="h-6 w-48 animate-pulse rounded bg-gray-200" />
 
