@@ -17,7 +17,7 @@ export default function Footer() {
           <div className="md:w-2/3">
             <Link href="/">
               <h1 className="text-2xl md:text-4xl font-bold">
-                Losode <span className="text-primary">Commerce</span>
+                Losode <span className="text-primary">Mart</span>
               </h1>
             </Link>
             <div>
