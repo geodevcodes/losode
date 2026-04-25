@@ -26,7 +26,7 @@ export default function Hero() {
   const secondCategory = categoriesWithImages?.[1];
   const thirdCategory = categoriesWithImages?.[2];
 
-  if (!isLoading) {
+  if (isLoading) {
     return (
       <section className="mx-auto max-w-2xl px-4 sm:pb-6 lg:max-w-7xl lg:px-8">
         <div className="mb-8 flex flex-wrap justify-between md:mb-16">
