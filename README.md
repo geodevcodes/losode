@@ -78,7 +78,7 @@ The MIT License - Copyright (c) 2026 - Present, geodevcodes / Storage Service.
 ## 🆘 Support
 
 - **Vercel**: [Vercel Documentation](https://vercel.com/)
-- **Platzi API**: [NextAuth Documentation](https://fakeapi.platzi.com/en)
+- **Platzi API**: [Platzi Documentation](https://fakeapi.platzi.com/en)
 
 ## 🙏 Acknowledgments
 
