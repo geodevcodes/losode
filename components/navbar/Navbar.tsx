@@ -23,7 +23,7 @@ const links = [
   },
   {
     name: "Accessories",
-    href: "/marketplace?category=interesrt",
+    href: "/marketplace?category=kategori-buah",
   },
 ];
 
