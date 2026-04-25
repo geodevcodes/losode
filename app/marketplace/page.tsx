@@ -8,6 +8,7 @@ import { useSearchParams } from "next/navigation";
 import { useGetProductsRequest } from "@/services/products.request";
 import { useGetCategoriesRequest } from "@/services/categories.request";
 import { useRouter } from "next/navigation";
+import MarketplaceSkeleton from "@/components/skeletons/MarketPlaceSkeleton";
 
 export default function ProductListingPage() {
   const searchParams = useSearchParams();
@@ -61,7 +62,7 @@ export default function ProductListingPage() {
   }, [products, selectedCategory, searchTerm, categoryId, priceRange, sort]);
 
   if (isLoading) {
-    return <p className="py-10 text-center">Loading products...</p>;
+    return <MarketplaceSkeleton />;
   }
 
   if (isError) {
