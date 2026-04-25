@@ -25,6 +25,7 @@ export default function AddToBag({
 
   return (
     <button
+      className="bg-primary text-primary-foreground p-3 hover:bg-primary/90 inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium"
       onClick={() => {
         dispatch(
           addToCart({

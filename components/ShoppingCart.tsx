@@ -27,7 +27,7 @@ export default function ShoppingCart({
 
   return (
     <div>
-      <div className="sm:max-w-lg bg-white">
+      <div className="sm:max-w-lg bg-white h-[100vh] flex flex-col">
         <h4 className="font-semibold text-xl">Shopping Cart</h4>
 
         <div className="h-full flex flex-col justify-between">
@@ -114,7 +114,7 @@ export default function ShoppingCart({
                   router.push("/checkout");
                 }}
                 disabled={cartCount === 0}
-                className="w-full"
+                className="w-full bg-primary text-primary-foreground p-3 hover:bg-primary/90 inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium"
               >
                 Checkout
               </button>
@@ -122,10 +122,10 @@ export default function ShoppingCart({
 
             <div className="mt-6 flex justify-center text-center text-sm text-gray-500">
               <p>
-                OR{" "}
+                OR
                 <button
                   onClick={() => setShowCart(false)}
-                  className="font-medium text-primary hover:text-primary/80"
+                  className="text-primary p-3 inline-flex items-center justify-center text-sm font-medium"
                 >
                   Continue Shopping
                 </button>

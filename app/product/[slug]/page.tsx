@@ -9,7 +9,6 @@ import { useParams } from "next/navigation";
 export default function ProductPage() {
   const params = useParams();
   const slug = params.slug as string;
-
   const { data: productData, isLoading, isError } = useGetProductRequest(slug);
 
   if (isLoading) {
@@ -38,7 +37,7 @@ export default function ProductPage() {
             </div>
 
             <div className="mb-6 flex items-center gap-3 md:mb-10">
-              <button className="rounded-full gap-x-2">
+              <button className="rounded-full gap-x-2 bg-primary text-primary-foreground p-2 px-3 hover:bg-primary/90 inline-flex items-center justify-center whitespace-nowrap">
                 <span className="text-sm">4.2</span>
                 <Star className="w-5 h-5" />
               </button>
@@ -53,12 +52,10 @@ export default function ProductPage() {
                 <span className="text-xl font-bold text-gray-800 md:text-2xl">
                   ${productData.price}
                 </span>
-
                 <span className="mb-0.5 text-red-500 line-through">
                   ${productData.price + 30}
                 </span>
               </div>
-
               <span className="text-sm text-gray-500">
                 Incl. Vat plus shipping
               </span>
@@ -80,9 +77,10 @@ export default function ProductPage() {
                 slug={productData.slug}
               />
 
-              <button className="rounded-full gap-x-2">Checkout now</button>
+              <button className="bg-accent hover:bg-accent/80 p-3 inline-flex items-center justify-center gap-x-2 whitespace-nowrap rounded-md text-sm font-medium">
+                Checkout now
+              </button>
             </div>
-
             <p className="mt-12 text-base text-gray-500 tracking-wide">
               {productData.description}
             </p>
