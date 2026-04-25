@@ -41,7 +41,7 @@ export default function RootLayout({
             <Footer />
           </ReduxProvider>
         </TanstackProvider>
-        <Toaster position="top-center" richColors={true} />
+        <Toaster position="bottom-right" richColors={true} />
       </body>
     </html>
   );

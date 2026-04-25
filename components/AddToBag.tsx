@@ -37,7 +37,6 @@ export default function AddToBag({
             slug,
           }),
         );
-
         toast.success("Product added to cart");
       }}
     >
