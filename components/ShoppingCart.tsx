@@ -114,7 +114,7 @@ export default function ShoppingCart({
                   router.push("/checkout");
                 }}
                 disabled={cartCount === 0}
-                className="w-full bg-primary text-primary-foreground p-3 hover:bg-primary/90 inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium"
+                className="cursor-pointer w-full bg-primary text-primary-foreground p-3 hover:bg-primary/90 inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium"
               >
                 Checkout
               </button>
@@ -125,7 +125,7 @@ export default function ShoppingCart({
                 OR
                 <button
                   onClick={() => setShowCart(false)}
-                  className="text-primary p-3 inline-flex items-center justify-center text-sm font-medium"
+                  className="cursor-pointer text-primary p-3 inline-flex items-center justify-center text-sm font-medium"
                 >
                   Continue Shopping
                 </button>

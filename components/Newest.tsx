@@ -44,7 +44,11 @@ export default function Newest() {
 
         <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
           {productsData?.map((product) => (
-            <div key={product.id} className="group relative">
+            <Link
+              href={`/product/${product.slug}`}
+              key={product.id}
+              className="group relative block"
+            >
               <div className="aspect-square w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:h-80">
                 <Image
                   src={product.images?.[0]}
@@ -54,25 +58,18 @@ export default function Newest() {
                   className="w-full h-full object-cover object-center lg:w-full lg:h-full"
                 />
               </div>
-
               <div className="mt-4 flex justify-between">
                 <div>
-                  <h3 className="text-sm text-gray-700">
-                    <Link href={`/product/${product.slug}`}>
-                      {product.title}
-                    </Link>
-                  </h3>
-
+                  <h3 className="text-sm text-gray-700">{product.title}</h3>
                   <p className="mt-1 text-sm text-gray-500">
                     {product.category?.name}
                   </p>
                 </div>
-
                 <p className="text-sm font-medium text-gray-900">
                   ${product.price}
                 </p>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

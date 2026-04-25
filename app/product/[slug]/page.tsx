@@ -77,7 +77,7 @@ export default function ProductPage() {
                 slug={productData.slug}
               />
 
-              <button className="bg-accent hover:bg-accent/80 p-3 inline-flex items-center justify-center gap-x-2 whitespace-nowrap rounded-md text-sm font-medium">
+              <button className="cursor-pointer bg-accent hover:bg-accent/80 p-3 inline-flex items-center justify-center gap-x-2 whitespace-nowrap rounded-md text-sm font-medium">
                 Checkout now
               </button>
             </div>
