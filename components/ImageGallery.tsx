@@ -1,5 +1,4 @@
 "use client";
-
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -33,6 +32,9 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
               height={200}
               className="h-full w-full object-cover object-center cursor-pointer"
               onClick={() => setBigImage(image)}
+              priority
+              placeholder="blur"
+              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/PZxPQAIogM0nyRNiQAAAABJRU5ErkJggg=="
             />
           </div>
         ))}
@@ -54,6 +56,9 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
               width={600}
               height={600}
               className="h-full w-full object-cover object-center cursor-pointer"
+              priority
+              placeholder="blur"
+              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/PZxPQAIogM0nyRNiQAAAABJRU5ErkJggg=="
             />
           </motion.div>
         </AnimatePresence>
