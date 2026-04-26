@@ -44,12 +44,15 @@ export default function Footer() {
             </ul>
             <div className="flex items-center gap-2 lg:gap-6">
               <p className="text-primary">Follow us</p>
-              <div className="flex items-center gap-4">
+              <Link
+                href={"https://geodevcodes.vercel.app/en"}
+                className="flex items-center gap-4"
+              >
                 <IoLogoInstagram className="w-5 h-5 cursor-pointer" />
                 <FaXTwitter className="w-5 h-5 cursor-pointer" />
                 <CiFacebook className="w-6 h-6 cursor-pointer" />
                 <FaLinkedin className="w-5 h-5 cursor-pointer" />
-              </div>
+              </Link>
             </div>
           </div>
           {/* contact us */}
