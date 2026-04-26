@@ -12,6 +12,7 @@ import {
 } from "@/redux/features/cartSelectors";
 import { useAppDispatch, useAppSelector } from "@/redux/hooks";
 import { useRouter } from "next/navigation";
+import { ShoppingBag } from "lucide-react";
 
 export default function ShoppingCart({
   setShowCart,
@@ -34,7 +35,27 @@ export default function ShoppingCart({
           <div className="mt-8 flex-1 overflow-y-auto">
             <ul className="-my-6 divide-y divide-gray-200">
               {cartCount === 0 ? (
-                <h1 className="py-6">You don&apos;t have any items</h1>
+                <div className="flex flex-col items-center justify-center py-16 text-center">
+                  <div className="flex h-20 w-20 items-center justify-center rounded-full bg-gray-100">
+                    <ShoppingBag className="h-9 w-9 text-gray-400" />
+                  </div>
+
+                  <h3 className="mt-6 text-base font-semibold text-gray-900">
+                    Your cart is empty
+                  </h3>
+
+                  <p className="mt-2 max-w-xs text-sm leading-6 text-gray-500">
+                    Looks like you haven&apos;t added anything yet. Start
+                    exploring products and add your favourites to cart.
+                  </p>
+
+                  <button
+                    onClick={() => setShowCart(false)}
+                    className="cursor-pointer mt-6 inline-flex items-center justify-center rounded-md bg-primary px-5 py-3 text-sm font-medium text-primary-foreground hover:bg-primary/90"
+                  >
+                    Continue Shopping
+                  </button>
+                </div>
               ) : (
                 cartItems.map((entry) => (
                   <li key={entry.id} className="flex py-6">
@@ -114,7 +135,7 @@ export default function ShoppingCart({
                   router.push("/checkout");
                 }}
                 disabled={cartCount === 0}
-                className="cursor-pointer w-full bg-primary text-primary-foreground p-3 hover:bg-primary/90 inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium"
+                className="cursor-pointer w-full bg-primary disabled:bg-primary/60 disabled:cursor-not-allowed text-primary-foreground p-3 hover:bg-primary/90 inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium"
               >
                 Checkout
               </button>
