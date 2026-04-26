@@ -43,8 +43,8 @@ export default function Navbar() {
                     href={`/marketplace?category=${category.slug}`}
                     className={
                       isActive
-                        ? "text-lg font-semibold text-primary"
-                        : "text-lg font-semibold text-gray-600 transition duration-100 hover:text-primary"
+                        ? "text-lg font-semibold text-primary capitalize"
+                        : "text-lg font-semibold text-gray-600 capitalize transition duration-100 hover:text-primary"
                     }
                   >
                     {category.name}

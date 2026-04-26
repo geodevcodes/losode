@@ -24,7 +24,6 @@ export default function ProductListingPage() {
   const { data: categories = [] } = useGetCategoriesRequest();
 
   const [searchTerm, setSearchTerm] = useState("");
-  const [categoryId, setCategoryId] = useState<number | null>(null);
   const [priceRange, setPriceRange] = useState<[number, number]>([0, 1000]);
   const [sort, setSort] = useState("newest");
 
@@ -59,7 +58,7 @@ export default function ProductListingPage() {
     }
 
     return result;
-  }, [products, selectedCategory, searchTerm, categoryId, priceRange, sort]);
+  }, [products, selectedCategory, searchTerm, priceRange, sort]);
 
   if (isLoading) {
     return <MarketplaceSkeleton />;
