@@ -184,6 +184,9 @@ export default function ProductListingPage() {
                       width={500}
                       height={650}
                       className="h-full w-full object-cover object-center transition duration-300 group-hover:scale-105"
+                      priority
+                      placeholder="blur"
+                      blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/PZxPQAIogM0nyRNiQAAAABJRU5ErkJggg=="
                     />
 
                     <span className="absolute left-3 top-3 rounded-full bg-white px-3 py-1 text-xs font-medium text-gray-700 shadow-sm">

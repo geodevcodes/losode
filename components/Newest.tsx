@@ -55,6 +55,9 @@ export default function Newest() {
                   width={300}
                   height={300}
                   className="w-full h-full object-cover object-center lg:w-full lg:h-full"
+                  priority
+                  placeholder="blur"
+                  blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/PZxPQAIogM0nyRNiQAAAABJRU5ErkJggg=="
                 />
               </div>
               <div className="mt-4 flex justify-between">
