@@ -13,7 +13,7 @@ With intuitive navigation, secure payments, and a responsive interface, Losode h
 - **Framework**: [Next.js 16](https://nextjs.org/) with App Router
 - **Tailwindcss (Styling)**: [Tailwind CSS 4](https://tailwindcss.com/)
 - **React TanStack Query**: [React Tanstack Query](https://tanstack.com/query/latest)
-- **AI Models**: [Openai](https://ai-sdk.dev/) (openai models)
+- **Ant Design**: [Ant Design](https://ant.design/) (Ant Design UI)
 - **Framer Motion**: [Framer Motion](https://motion.dev/docs)
 - **React-Hook Form**: [Redux Hook Form](https://react-hook-form.com)
 - **React-Redux**: [Redux Toolkit](https://redux-toolkit.js.org/)
