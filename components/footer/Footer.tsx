@@ -36,13 +36,11 @@ export default function Footer() {
           {/* useful link */}
           <div className="text-sm leading-8 md:w-1/3">
             <h4 className="font-bold text-primary md:text-[14px]">
-              Useful Links
+              Quick Links
             </h4>
             <ul>
               <li>Overview</li>
-              <li>Timeline</li>
               <li>FAQs</li>
-              <li>Register</li>
             </ul>
             <div className="flex items-center gap-2 lg:gap-6">
               <p className="text-primary">Follow us</p>
@@ -70,8 +68,8 @@ export default function Footer() {
           </div>
         </section>
         <div>
-          <p className="text-center mt-6 text-[12px] md:text-[14px] pb-4">
-            All rights reserved. copyright © {dateString} losode.
+          <p className="text-center mt-6 text-[12px] md:text-[14px] pb-4 italic">
+            All rights reserved. copyright © {dateString} losodemart.
           </p>
         </div>
       </footer>
