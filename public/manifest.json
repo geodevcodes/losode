@@ -1,0 +1,27 @@
+{
+  "theme_color": "#ffffff",
+  "background_color": "#f0fbff",
+  "icons": [
+    {
+      "purpose": "maskable",
+      "sizes": "512x512",
+      "src": "icon512_maskable.png",
+      "type": "image/png"
+    },
+    {
+      "purpose": "any",
+      "sizes": "512x512",
+      "src": "icon512_rounded.png",
+      "type": "image/png"
+    }
+  ],
+  "orientation": "portrait",
+  "display": "standalone",
+  "dir": "auto",
+  "lang": "en-US",
+  "name": "LosodeMart",
+  "short_name": "losodemart",
+  "start_url": "/",
+  "scope": "/",
+  "description": "Discover curated fashion, shoes, accessories, and lifestyle products on LosodeMart. Shop quality items from a modern ecommerce marketplace built for a seamless shopping experience."
+}
