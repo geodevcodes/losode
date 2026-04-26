@@ -17,10 +17,6 @@ const nextConfig: NextConfig = {
         hostname: "pravatar.cc",
       },
       {
-        protocol: "http",
-        hostname: "placeimg.com",
-      },
-      {
         protocol: "https",
         hostname: "placehold.co",
       },
@@ -35,6 +31,14 @@ const nextConfig: NextConfig = {
       {
         protocol: "https",
         hostname: "sanbercode.com",
+      },
+      {
+        protocol: "https",
+        hostname: "encrypted-tbn0.gstatic.com",
+      },
+      {
+        protocol: "http",
+        hostname: "placeimg.com",
       },
       {
         protocol: "http",

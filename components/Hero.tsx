@@ -2,25 +2,16 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useGetCategoriesRequest } from "@/services/categories.request";
+import { isValidCategory } from "@/lib/utils";
 
 export default function Hero() {
   const { data: categories = [], isLoading } = useGetCategoriesRequest();
+  const categoriesWithImages = categories.filter(isValidCategory);
 
-  const categoriesWithImages = categories.filter((category) => {
-    const image = category.image?.trim();
-
-    return (
-      image &&
-      image.startsWith("http") &&
-      !image.includes("placehold.co") &&
-      !image.includes("placeimg.com") &&
-      !image.includes("pravatar.cc") &&
-      !image.includes("test.com")
-    );
-  });
-
-  const firstImage = categoriesWithImages?.[0]?.image || "/placeholder.png";
-  const secondImage = categoriesWithImages?.[1]?.image || "/placeholder.png";
+  const firstImage =
+    categoriesWithImages?.[0]?.image || "/assets/placeholder.jpg";
+  const secondImage =
+    categoriesWithImages?.[1]?.image || "/assets/placeholder.jpg";
 
   const firstCategory = categoriesWithImages?.[0];
   const secondCategory = categoriesWithImages?.[1];
