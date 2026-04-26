@@ -2,16 +2,7 @@
 import { useAppDispatch } from "@/redux/hooks";
 import { addToCart } from "@/redux/features/cartSlice";
 import { toast } from "sonner";
-
-export interface ProductCart {
-  id: number;
-  name: string;
-  description: string;
-  price: number;
-  currency: string;
-  image: string;
-  slug: string;
-}
+import { ProductCart } from "@/types/products";
 
 export default function AddToBag({
   id,
