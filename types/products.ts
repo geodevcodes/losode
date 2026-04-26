@@ -30,3 +30,13 @@ export interface UpdateProductPayload {
   categoryId?: number;
   images?: string[];
 }
+
+export interface ProductCart {
+  id: number;
+  name: string;
+  description: string;
+  price: number;
+  currency: string;
+  image: string;
+  slug: string;
+}
