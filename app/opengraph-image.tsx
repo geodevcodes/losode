@@ -2,11 +2,6 @@ import generateOgImage from "@/components/opengraph-image/og-generator";
 
 // Image metadata
 export const alt = "About LosodeMart - Modern Fashion & Lifestyle Marketplace";
-export const size = {
-  width: 1200,
-  height: 630,
-};
-
 export const contentType = "image/png";
 
 // Image generation

@@ -5,7 +5,7 @@ import { join } from "node:path";
 // Content-Type
 export const contentType = "image/png";
 
-export type OGImageType = "home" | "blog" | "blog-detail";
+export type OGImageType = "home" | "marketplace" | "product";
 
 // Main Function
 export default async function generateOgImage(type: OGImageType, props: any) {
@@ -20,30 +20,25 @@ export default async function generateOgImage(type: OGImageType, props: any) {
   const base64Image = imageBuffer.toString("base64");
   const dataUrl = `data:image/png;base64,${base64Image}`;
 
-  const size = {
-    width: 1200,
-    height: 630,
-  };
-
   const styleMap = {
     home: {
       background: `url(${dataUrl})`,
       titleSize: 80,
       descSize: 40,
     },
-    blog: {
+    marketplace: {
       background: `url(${dataUrl})`,
       titleSize: 60,
       descSize: 30,
     },
-    "blog-detail": {
+    product: {
       background: `url(${dataUrl})`,
       titleSize: 70,
       descSize: 35,
     },
   };
 
-  const { background, titleSize, descSize } = styleMap[type];
+  const { background } = styleMap[type];
 
   return new ImageResponse(
     <div
@@ -67,12 +62,11 @@ export default async function generateOgImage(type: OGImageType, props: any) {
           alignItems: "center",
           flexDirection: "column",
           padding: 60,
-          maxWidth: "90%",
+          maxWidth: "100%",
         }}
       ></div>
     </div>,
     {
-      ...size,
       fonts: [
         {
           name: "Inter",
