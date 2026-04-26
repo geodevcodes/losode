@@ -18,6 +18,7 @@ With intuitive navigation, secure payments, and a responsive interface, Losode h
 - **React-Hook Form**: [Redux Hook Form](https://react-hook-form.com)
 - **React-Redux**: [Redux Toolkit](https://redux-toolkit.js.org/)
 - **Icons**: [Lucide React](https://lucide.dev/)
+- **Unit Testing (Jest)** [Unit Testing (Jest)](https://nextjs.org/docs/app/guides/testing/jest)
 
 # 🎯 Prototype
 
@@ -70,6 +71,20 @@ Visit [http://localhost:3000](http://localhost:3000) to see your application run
 Vercel was used to deploy the app.
 
 - [VERCEL](https://vercel.com/)
+
+
+# Testing
+
+Unit testing ensure components render correctly and improve application reliability.
+
+📦 Testing Stack
+- Jest – Test runner
+- React Testing Library – Component testing
+- Jest DOM – Extended DOM assertions
+
+```bash
+npm run test
+```
 
 # License
 
