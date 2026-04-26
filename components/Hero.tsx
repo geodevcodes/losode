@@ -67,23 +67,29 @@ export default function Hero() {
         <div className="flex h-12 w-74 divide-x overflow-hidden rounded-lg border border-input">
           <Link
             href={`/marketplace?category=${firstCategory?.slug || "shoes"}`}
-            className="flex w-1/3 items-center justify-center text-gray-500 transition duration-100 hover:bg-gray-100 active:bg-gray-200 border-input"
+            className="capitalize flex w-1/3 min-w-0 items-center justify-center text-gray-500 transition duration-100 hover:bg-gray-100 active:bg-gray-200 border-input"
           >
-            {firstCategory?.name || "Shoes"}
+            <span className="truncate max-w-[8ch] block">
+              {firstCategory?.name || "Shoes"}
+            </span>
           </Link>
 
           <Link
             href={`/marketplace?category=${secondCategory?.slug || "adad"}`}
-            className="flex w-1/3 items-center justify-center text-gray-500 transition duration-100 hover:bg-gray-100 active:bg-gray-200 border-input"
+            className="capitalize flex w-1/3 items-center justify-center text-gray-500 transition duration-100 hover:bg-gray-100 active:bg-gray-200 border-input max-w-[10ch]"
           >
-            {secondCategory?.name || "Furniture"}
+            <span className="truncate max-w-[8ch] block">
+              {secondCategory?.name || "Furniture"}
+            </span>
           </Link>
 
           <Link
             href={`/marketplace?category=${thirdCategory?.slug || "kategori-buah"}`}
-            className="flex w-1/3 items-center justify-center text-gray-500 transition duration-100 hover:bg-gray-100 active:bg-gray-200"
+            className="capitalize flex w-1/3 items-center justify-center text-gray-500 transition duration-100 hover:bg-gray-100 active:bg-gray-200 max-w-[10ch]"
           >
-            {thirdCategory?.name || "Accessories"}
+            <span className="truncate max-w-[8ch] block">
+              {thirdCategory?.name || "Accessories"}
+            </span>
           </Link>
         </div>
       </div>
