@@ -1,45 +1,11 @@
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import axiosInstance from "./apiClient";
 import { toast } from "sonner";
-
-export interface Category {
-  id: number;
-  name: string;
-  image: string;
-}
-
-export interface Product {
-  id: number;
-  title: string;
-  slug: string;
-  price: number;
-  description: string;
-  images: string[];
-  category: {
-    id: number;
-    name: string;
-    slug: string;
-    image: string;
-  };
-}
-
-export interface CreateProductPayload {
-  title: string;
-  slug: string;
-  price: number;
-  description: string;
-  categoryId: number;
-  images: string[];
-}
-
-export interface UpdateProductPayload {
-  title?: string;
-  slug?: string;
-  price?: number;
-  description?: string;
-  categoryId?: number;
-  images?: string[];
-}
+import {
+  CreateProductPayload,
+  Product,
+  UpdateProductPayload,
+} from "@/types/products";
 
 export const useCreateProductRequest = () => {
   const queryClient = useQueryClient();
