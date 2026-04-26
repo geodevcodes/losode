@@ -1,12 +1,12 @@
 <div align="center">
-<h1>Losode Application</h1>
-<h6><i>Manage your Client with Losode Application</i></h6>
+<h1>LosodeMart Application</h1>
+<h6><i>Manage your Client with LosodeMart Application</i></h6>
 <hr />
 </div>
 
-Losode is a modern ecommerce platform for fashion and lifestyle products, including clothing, shoes, and accessories. Built for scalability and great user experience, it allows customers to seamlessly browse, discover, and purchase quality items from a curated marketplace.
+LosodeMart is a modern ecommerce platform for fashion and lifestyle products, including clothing, shoes, and accessories. Built for scalability and great user experience, it allows customers to seamlessly browse, discover, and purchase quality items from a curated marketplace.
 
-With intuitive navigation, secure payments, and a responsive interface, Losode helps businesses showcase their products while delivering a fast and seamless shopping experience.
+With intuitive navigation, secure payments, and a responsive interface, LosodeMart helps businesses showcase their products while delivering a fast and seamless shopping experience.
 
 # 🏗️ Tech Stack
 
