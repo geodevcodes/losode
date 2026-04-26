@@ -41,10 +41,10 @@ export default function Hero() {
                 <Image
                   src={firstImage}
                   alt={firstCategory?.name || "Category Image"}
-                  priority
+                  className="h-full w-full object-cover object-center"
                   width={500}
                   height={500}
-                  className="h-full w-full object-cover object-center"
+                  priority
                 />
               </div>
 
