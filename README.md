@@ -19,6 +19,8 @@ With intuitive navigation, secure payments, and a responsive interface, Losode h
 - **React-Redux**: [Redux Toolkit](https://redux-toolkit.js.org/)
 - **Icons**: [Lucide React](https://lucide.dev/)
 - **Unit Testing (Jest)** [Unit Testing (Jest)](https://nextjs.org/docs/app/guides/testing/jest)
+- **Progressier (PWA-Manifest)** [Progressier)](https://progressier.com/pwa-manifest-generator)
+- **@ducanh2912/next-pwa** [ducanh2912 next-pwa](https://ducanh-next-pwa.vercel.app/docs/next-pwa/getting-started)
 
 # 🎯 Prototype
 
@@ -72,12 +74,12 @@ Vercel was used to deploy the app.
 
 - [VERCEL](https://vercel.com/)
 
-
 # Testing
 
 Unit testing ensure components render correctly and improve application reliability.
 
 📦 Testing Stack
+
 - Jest – Test runner
 - React Testing Library – Component testing
 - Jest DOM – Extended DOM assertions
@@ -94,6 +96,7 @@ The MIT License - Copyright (c) 2026 - Present, geodevcodes / Storage Service.
 
 - **Vercel**: [Vercel Documentation](https://vercel.com/)
 - **Platzi API**: [Platzi Documentation](https://fakeapi.platzi.com/en)
+- **PWA-Manifest Generator**: [PWA Manifest](https://progressier.com/pwa-manifest-generator)
 
 ## 🙏 Acknowledgments
 
