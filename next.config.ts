@@ -30,10 +30,6 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
-        hostname: "pravatar.cc",
-      },
-      {
-        protocol: "https",
         hostname: "placehold.co",
       },
       {
@@ -60,6 +56,31 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "placeimg.com",
       },
+      {
+        protocol: "https",
+        hostname: "placehold.net",
+      },
+      {
+        protocol: "https",
+        hostname: "i.sstatic.net",
+      },
+      {
+        protocol: "https",
+        hostname: "picsum.photos",
+      },
+      {
+        protocol: "https",
+        hostname: "simplysofas.in",
+      },
+      {
+        protocol: "https",
+        hostname: "www.simplysofas.in",
+      },
+      {
+        protocol: "https",
+        hostname: "www.lufian.com",
+      },
+      { protocol: "https", hostname: "lectera.com" },
       {
         protocol: "http",
         hostname: "127.0.0.1",
