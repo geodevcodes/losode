@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import {
   removeFromCart,
   increaseQuantity,
@@ -13,6 +12,7 @@ import {
 import { useAppDispatch, useAppSelector } from "@/redux/hooks";
 import { useRouter } from "next/navigation";
 import { ShoppingBag } from "lucide-react";
+import ProductImage from "./ProductImage";
 
 export default function ShoppingCart({
   setShowCart,
@@ -60,11 +60,12 @@ export default function ShoppingCart({
                 cartItems.map((entry) => (
                   <li key={entry.id} className="flex py-6">
                     <div className="w-24 h-24 flex-shrink-0 overflow-hidden rounded-md border border-gray-200">
-                      <Image
+                      <ProductImage
                         src={entry.image}
                         alt={entry.name}
                         width={100}
                         height={100}
+                        className="h-full w-full object-cover object-center"
                       />
                     </div>
 

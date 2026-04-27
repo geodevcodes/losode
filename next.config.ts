@@ -81,6 +81,7 @@ const nextConfig: NextConfig = {
         hostname: "www.lufian.com",
       },
       { protocol: "https", hostname: "lectera.com" },
+      { protocol: "https", hostname: "serfoto.com.tr" },
       {
         protocol: "http",
         hostname: "127.0.0.1",

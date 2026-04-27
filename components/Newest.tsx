@@ -1,9 +1,9 @@
 "use client";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import Image from "next/image";
 import { useGetProductsRequest } from "@/services/products.request";
 import NewestSkeleton from "@/components/skeletons/NewestSkeleton";
+import ProductImage from "./ProductImage";
 
 export default function Newest() {
   const limit = 4;
@@ -49,16 +49,7 @@ export default function Newest() {
               className="group relative block"
             >
               <div className="aspect-square w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:h-80">
-                <Image
-                  src={product.images?.[0]}
-                  alt={product.title}
-                  width={300}
-                  height={300}
-                  className="w-full h-full object-cover object-center lg:w-full lg:h-full"
-                  priority
-                  placeholder="blur"
-                  blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/PZxPQAIogM0nyRNiQAAAABJRU5ErkJggg=="
-                />
+                <ProductImage src={product.images?.[0]} alt={product.title} />
               </div>
               <div className="mt-4 flex justify-between">
                 <div>

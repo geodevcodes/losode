@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import Link from "next/link";
 import { Input, Select, Slider } from "antd";
 import { Search } from "lucide-react";
@@ -9,6 +8,7 @@ import { useGetProductsRequest } from "@/services/products.request";
 import { useGetCategoriesRequest } from "@/services/categories.request";
 import { useRouter } from "next/navigation";
 import MarketplaceSkeleton from "@/components/skeletons/MarketPlaceSkeleton";
+import ProductImage from "@/components/ProductImage";
 
 export default function ProductListingPage() {
   const searchParams = useSearchParams();
@@ -178,15 +178,12 @@ export default function ProductListingPage() {
                   className="group block"
                 >
                   <div className="relative aspect-[3/4] overflow-hidden rounded-md bg-gray-100">
-                    <Image
+                    <ProductImage
                       src={product.images?.[0]}
                       alt={product.title}
                       width={500}
                       height={650}
                       className="h-full w-full object-cover object-center transition duration-300 group-hover:scale-105"
-                      priority
-                      placeholder="blur"
-                      blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/PZxPQAIogM0nyRNiQAAAABJRU5ErkJggg=="
                     />
 
                     <span className="absolute left-3 top-3 rounded-full bg-white px-3 py-1 text-xs font-medium text-gray-700 shadow-sm">
