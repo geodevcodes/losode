@@ -3,12 +3,14 @@ import type { NextConfig } from "next";
 /** @type {import('next').NextConfig} */
 import withPWAInit from "@ducanh2912/next-pwa";
 
+const isDev = process.env.NODE_ENV === "development";
+
 const withPWA = withPWAInit({
   dest: "public",
-  cacheOnFrontEndNav: true,
-  aggressiveFrontEndNavCaching: true,
-  reloadOnOnline: true,
-  disable: false,
+  cacheOnFrontEndNav: !isDev,
+  aggressiveFrontEndNavCaching: !isDev,
+  reloadOnOnline: !isDev,
+  disable: isDev,
   workboxOptions: {
     disableDevLogs: true,
   },
@@ -52,6 +54,10 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "http",
+        hostname: "placeimg.com",
+      },
+      {
+        protocol: "https",
         hostname: "placeimg.com",
       },
       {
