@@ -49,7 +49,7 @@ export default function Newest() {
               className="group relative block"
             >
               <div className="aspect-square w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:h-80">
-                <ProductImage src={product.images?.[0]} alt={product.title} />
+                <ProductImage src={product.images?.[0]} alt={product.title} className="h-full" />
               </div>
               <div className="mt-4 flex justify-between">
                 <div>
